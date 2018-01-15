@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/xstream-1.4.10.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/xstream"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/fastjson-1.2.2.jar" sourcepath="D:/workspace/MyRPC_Client/lib/fastjson-1.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/protostuff-api-1.0.8.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/protostuff-collectionschema-1.0.8.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/protostuff-core-1.0.8.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/protostuff-runtime-1.0.8.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/objenesis-2.6.jar" sourcepath="F:/工行学习/分布式服务框架学习/序列化/objenesis-java实例化工具/objenesis-2.6-bin/objenesis-2.6/objenesis-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/hessian-4.0.7.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/MyRPC_Client/lib/dom4j-1.6.1.jar" sourcepath="D:/workspace/MyRPC_Client/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

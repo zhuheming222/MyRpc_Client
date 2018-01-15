@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE root 
+[
+<!ELEMENT root ANY>
+<!ELEMENT SerializerList (Serializer+)>
+<!ELEMENT Serializer EMPTY>
+<!ATTLIST Serializer code CDATA "">
+<!ATTLIST Serializer src CDATA "">
+<!ELEMENT CurrentSerializer EMPTY>
+<!ATTLIST CurrentSerializer code CDATA "">
+<!ATTLIST CurrentSerializer src CDATA "">
+]>
+<root>
+		<SerializerList>
+			<Serializer code="JdkDefaultSerializer" src="zhm.rpc.serializer.JdkDefaultSerializer"/>
+			<Serializer code="FastjsonSerializer" src="zhm.rpc.serializer.FastjsonSerializer"/>
+			<Serializer code="HessianSerializer" src="zhm.rpc.serializer.HessianSerializer"/>
+			<Serializer code="ProtoStuffSerializer" src="zhm.rpc.serializer.ProtoStuffSerializer"/>
+			<Serializer code="XStreamSerializer" src="zhm.rpc.serializer.XStreamSerializer"/>
+		</SerializerList>
+		<CurrentSerializer code="FastjsonSerializer" src="zhm.rpc.serializer.FastjsonSerializer"/>
+</root>  
