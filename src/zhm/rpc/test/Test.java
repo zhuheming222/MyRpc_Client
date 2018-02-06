@@ -1,8 +1,15 @@
 package zhm.rpc.test;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
+import java.util.regex.Pattern;
 
+import zhm.rpc.base.ServerAddress;
 import zhm.rpc.base.XmlDocumentHolder;
+import zhm.rpc.connect.SocketConnect;
 import zhm.rpc.proxy.ConsumeProxy;
 import zhm.rpc.server.IServer;
 
@@ -10,8 +17,9 @@ public class Test {
 	
 	//远程调用服务端的testMethod方法，客户端只有接口，没有方法实现。
 	public static void main(String args[]) throws InterruptedException{
-				
-		Object obj= ConsumeProxy.consumeSerializer(IServer.class, "127.0.0.1", 8081);
+		//ServerAddress serverAddress=new ServerAddress();
+		
+		Object obj= ConsumeProxy.consumeSerializer(IServer.class,"SERVER1");
 		if(obj!=null){
 			System.out.println(obj.getClass().getInterfaces().toString());
 			//System.out.println(obj.toString());
@@ -27,5 +35,7 @@ public class Test {
 			Thread.sleep(1000);
 		}
 	}
+	
+
 
 }

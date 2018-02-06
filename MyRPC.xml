@@ -18,5 +18,5 @@
 			<Serializer code="ProtoStuffSerializer" src="zhm.rpc.serializer.ProtoStuffSerializer"/>
 			<Serializer code="XStreamSerializer" src="zhm.rpc.serializer.XStreamSerializer"/>
 		</SerializerList>
-		<CurrentSerializer code="FastjsonSerializer" src="zhm.rpc.serializer.FastjsonSerializer"/>
+		<CurrentSerializer code="FastjsonSerializer" src="zhm.rpc.serializer.FastjsonSerializer"/>		
 </root>  
