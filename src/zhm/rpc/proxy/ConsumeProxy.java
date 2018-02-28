@@ -28,6 +28,10 @@ import zhm.rpc.ioc.BeanLoaderImpl;
  * @author zhuheming cosumeProxy 2017年9月29日上午12:03:30
  */
 public class ConsumeProxy {
+	
+	private static final int PROVIDER_PORT=8989;
+	private static final String PROVIDER_IP="127.0.0.1";
+	
 
 	private static BeanLoaderImpl seriBean = new BeanLoaderImpl();
 
@@ -111,7 +115,7 @@ public class ConsumeProxy {
 		}
 
 		SocketConnect sc = new SocketConnect();
-		Socket socket = sc.connect("localhost", 8090);
+		Socket socket = sc.connect(PROVIDER_IP, PROVIDER_PORT);
 		// 发送方法和参数
 		ObjectOutputStream ops;
 		String getString = "";

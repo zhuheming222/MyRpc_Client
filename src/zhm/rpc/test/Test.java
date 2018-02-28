@@ -15,11 +15,15 @@ import zhm.rpc.server.IServer;
 
 public class Test {
 	
+	private static final String SERVER_NAME="Server1";
+	
+	private static final int SLEEP_TIME=1000;
+	
 	//远程调用服务端的testMethod方法，客户端只有接口，没有方法实现。
 	public static void main(String args[]) throws InterruptedException{
 		//ServerAddress serverAddress=new ServerAddress();
 		
-		Object obj= ConsumeProxy.consumeSerializer(IServer.class,"SERVER1");
+		Object obj= ConsumeProxy.consumeSerializer(IServer.class,SERVER_NAME);
 		if(obj!=null){
 			System.out.println(obj.getClass().getInterfaces().toString());
 			//System.out.println(obj.toString());
@@ -30,12 +34,9 @@ public class Test {
 		IServer rpc=(IServer)obj;
 		
 		for(int i=0;i<100;i++){
-			
 			System.out.println(rpc.testMethod(""+i));
-			Thread.sleep(1000);
+			Thread.sleep(SLEEP_TIME);
 		}
 	}
-	
-
 
 }
